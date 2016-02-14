@@ -2,7 +2,7 @@ library(ggplot2)
 
 # Programming skills
 df <- data.frame(language = c('python', 'R', 'bash', 'matlab', 'JS'),
-                 competence = c(20, 40, 10, 20, 20))
+                 competence = c(30, 40, 10, 15, 15))
 
 ggplot(df, aes(x = "", y = competence, fill = factor(language))) +
   geom_bar(width = 1, stat="identity", color = 'white') +
