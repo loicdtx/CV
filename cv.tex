@@ -1,6 +1,9 @@
 
 %!TEX TS-program = xelatex
-\documentclass[]{friggeri-cv}
+\documentclass[spanish]{friggeri-cv}
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage[utf8]{inputenc}
 \usepackage{afterpage}
 \usepackage{hyperref}
 \usepackage{color}
@@ -14,13 +17,12 @@
     colorlinks=false,       % no lik border color
    allbordercolors=white    % white border color for all
 }
-\addbibresource{bibliography.bib}
 \RequirePackage{xcolor}
 \definecolor{pblue}{HTML}{0395DE}
 
 \begin{document}
 \header{Lo\"{i}c}{Dutrieux}
-      {Geo-Information Specialist}
+      {Especialista de Geo-Información}
       
 % Fake text to add separator      
 \fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
@@ -33,15 +35,22 @@
     ~
     \includegraphics[width=2.5cm]{img/profile_circle_small.png}
     ~
-  \section{Address}
-    Quartier Chabanas,
-    07250, Rompon, France
+  \section{Nacionalidad}
+    Francés
+    ~
+  \section{Estado civil}
+    Soltero
+    ~
+  \section{Dirección}
+    Dr Nabor Carrillo 127 Casa G
+    01780 Olivar de los Padres
+    Alvaro Obregon, Ciudad de México, México
     ~
   \section{Tel \& Skype}
-    +33 768 708 323
+    +52 557 854 8336
     loic.dutrieux
     ~
-  \section{Mail}
+  \section{Correo electrónico}
     \href{mailto:loic.dutrieux@gmail.com}{\textbf{loic.dutrieux@}\\gmail.com}
     ~
   \section{Web}
@@ -49,118 +58,72 @@
     % \href{https://www.linkedin.com/in/loicdutrieux}{linkedin.com/in/loicdutrieux}
     \href{https://github.com/loicdtx}{github.com/loicdtx}
     ~
-  \section{Programming}
+  \section{Programación}
     \includegraphics[width=3.5cm]{img/programming.png}
     ~
-  \section{Tools and software}
+  \section{Herramientas y Software}
   % TODO: OTB?
     \textbf{Linux}\includegraphics[scale=0.40]{img/4stars.png}
     \textbf{Git}\includegraphics[scale=0.40]{img/4stars.png}
     \textbf{QGIS}\includegraphics[scale=0.40]{img/4stars.png}
     \textbf{GDAL}\includegraphics[scale=0.40]{img/4stars.png}
     ~
-  \section{Personal Skills}
-    % \includegraphics[width=3.5cm]{img/personal.png}
-    \textbf{Empathy}
-    \textbf{Curiosity}
-    \textbf{Self learner}
-    \textbf{Manager}
-    \textbf{Facilitator} 
-    ~
 \end{aside}
 
 % TODO: Would be nice to start here with a profile section section: a 4 lines description of who I am and what are my interests 
 
-\section{Experience}
+\section{Experiencia}
 \begin{entrylist}
   \entry
     {02/12 - 06/16}
-    {PhD Researcher}
-    {Wageningen University, The Netherlands}
-    {Research on forest dynamics and biodiversity mapping from satellite images time-series, development of open source toolboxes for spatial analysis, course design \& teaching, linux systems administration, active participation in large collaborative EU funded research project.\\}
-  \entry
-    {09/11 - 02/12}
-    {Research Assistant}
-    {Wageningen University, The Netherlands}
-    {Coordination of elaboration and writing of a collaborative FP7 proposal among 8 European partners, Research on Arctic vegetation dynamics.\\}
-    % \entry
-    % {06/10 - 04/11}
-    % {Master Thesis}
-    % {Mali, Benin, Netherlands}
-    % {Master research on mapping water water productivity in rice systems using remote sensing, research design, field work, data analysis.\\}
-    \entry
-    {01/10 - 02/10}
-    {Academic Consultancy - Team manager}
-    {Wageningen University, The Netherlands}
-    {Team manager for a Consultancy project supervised by Wageningen University and commissioned by WATEURF (Water and Turf – Efficiency and Use Reduction for the Future)\\}
-    \entry
-    {06/08 - 09/08}
-    {Internship}
-    {Ministry of Agriculture, Central Farm, Belize}
-    {Design of a pressurized irrigation system to irrigate pastures at the experimental farm of the ministry of agriculture of Belize\\}
-    \entry
-    {2007 - 2009}
-    {Mountain guide - Seasonal}
-    {UCPA, self employed}
-    {Leading groups through two mountain ranges in the French Alps}
+    {Estudiante de doctorado - Investigador}
+    {Universidad de Wageningen, Países Bajos}
+    {Investigación sobre dynamicas de la selva Amazónica con series de tiempo de imagen satelitales, desarrollo de herramientas para análisis espacial, enseñanza, gestión de proyectos.\\}
+ 
 \end{entrylist}
 
-\section{Education}
+\section{Educación}
 \begin{entrylist}
   \entry
     {2011 - 2016}
-    {PhD (expected)}
-    {Wageningen University, The Netherlands}
-    {Remote sensing, time-series analysis, ecology, algorithm development\\
-    Post graduate courses: Efficient writing, statistics, forest ecology, global forest carbon policies, psychology of performance.\\
-    Thesis on \emph{Multidimensional remote sensing based mapping of tropical forests and their dynamics}\\}
+    {Doctorado}
+    {Universidad de Wageningen, Países Bajos}
+    {Percepción remota, análisis de series de tiempo, ecología, desarrollo de algoritmo\\}
 
   \entry
     {2009 - 2011}
-    {MSc International Land and Water Management}
-    {Wageningen University, The Netherlands}
-    {Main subjects: Irrigation, hydrology, water management, social aspects of land and water management \\
-    Major thesis on \emph{Mapping water productivity of rice using remote sensing}\\
-    Minor thesis on \emph{Vegetation dynamics in the Arctic from Moderate resolution remote sensing time-series}\\}
+    {MSc \emph{International Land and Water Management}}
+    {Universidad de Wageningen, Países Bajos}
+    {Temas principales: Sistemas de riego, hidrológica, administración del agua, sociología del desarrollo \\
+    Major tesis sobre \emph{Mapping water productivity of rice using remote sensing}\\
+    Minor tesis sobre \emph{Vegetation dynamics in the Arctic from Moderate resolution remote sensing time-series}\\}
   \entry
     {2007 - 2011}
-    {Master degree in Environment and Agriculture Engineering}
-    {Ecole Supérieure d'Agriculture d'Angers, France}
-    {Main subjects: Agronomy, landscape ecology, spatial analysis, Geopolitics, Management and Marketing}
+    {Maestría en Medio Ambiente y Ingeniería Agrícola}
+    {\emph{Ecole Supérieure d'Agriculture d'Angers, France}}
+    {Temas principales: Agronomía, Ecología del paisaje, Análisis Espacial, geopolítica, Gestión y Marketing}
   \entry
     {2005 - 2007}
-    {DUT (\textit{French professional Bachelor}) Biology and Environmental Engineering}
-    {IUT de Digne-Les-Bains, France}
-    {Main subjects: Hydro-biology, Waste Water Management, Thermodynamic}
+    {DUT (\textit{Licenciatura Profesional Francés}) Biología y Ingeniería del Medio Ambiente}
+    {IUT de Digne-Les-Bains, Francia}
+    {Temas principales: Hidrobiología, Gestión de aguas residuales, Termodinámica}
 \end{entrylist}
 
-\section{Contributed open source projects}
+\section{Proyectos de código abierto}
     \textbf{bfastSpatial}: \textit{Set of utilities and wrappers to perform change detection on satellite image time-series (Landsat and MODIS)}\\
     \\
-    \href{http://geoscripting-wur.github.io/}{\textbf{GeoScripting course}}: Open source master course on scripting for Geo-Information Science taught at Wageningen University\\
+    \href{http://geoscripting-wur.github.io/}{\textbf{GeoScripting}}: Curso de maestría sobre uso de programación para ciencias geo-espaciales, enseñado en al Universidad de Wageningen\\
     \\
-    Regular contributor to the \href{https://stat.ethz.ch/mailman/listinfo/r-sig-geo}{R-SIG-Geo} mailing list
+    Contribuyente regular de la lista de envío \href{https://stat.ethz.ch/mailman/listinfo/r-sig-geo}{R-SIG-Geo}
 
-\begin{aside}
-~
-~
-~
-  \section{Places Lived}
-    \includegraphics[width=3.5cm]{img/map.png}
-    \includegraphics[width=3.5cm]{img/mapAfrica.png}
-    ~
-  \section{Languages}
-    \textbf{English}\includegraphics[scale=0.40]{img/4stars.png}
-    \textbf{French}\includegraphics[scale=0.40]{img/5stars.png}
-    \textbf{Spanish}\includegraphics[scale=0.40]{img/2stars.png}
-\end{aside}
+\pagebreak
 
 % TODO: \section{Self taught subjects}
-\section{Honors and Awards}
-	\textbf{Oustanding Student Paper Award of the American Geophysical Union (AGU)}\\
-	Talk given at the AGU fall meeting, San Francisco, December 2015
+\section{Honores y premios}
+    \textbf{Oustanding Student Paper Award of the American Geophysical Union (AGU)}\\
+    San Francisco, Diciembre 2015
 
-\section{Scientific work}
+\section{Trabajo científico}
     Dutrieux, L. P., Jakovac, C., Latifah, S., Kooistra, L. (2016)\\
     \textbf{Reconstructing land use history from Landsat time-series. Case study of a swidden agriculture system in Brazil}\\
     \textit{International Journal of Applied Earth Observation and Geoinformation}\\
@@ -180,9 +143,30 @@
     \textbf{Post-disturbance recovery in forest spectral properties across the Amazon.}\\
     \\
 
+\begin{aside}
+~
+~
+~
+\section{Habilidades Personales}
+    % \includegraphics[width=3.5cm]{img/personal.png}
+    \textbf{Empatía}
+    \textbf{Curiosidad}
+    \textbf{Autodidacto}
+    \textbf{Manager}
+    \textbf{Facilitador} 
+    ~
+  \section{Lugares donde he vivido}
+    \includegraphics[width=3.5cm]{img/map.png}
+    \includegraphics[width=3.5cm]{img/mapAfrica.png}
+    ~
+  \section{Idiomas}
+    \textbf{Ingles}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{Francés}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{Español}\includegraphics[scale=0.40]{img/2stars.png}
+\end{aside}
 
 \begin{flushleft}
-\emph{July 30, 2016}
+\emph{Febrero 28, 2017}
 \end{flushleft}
 \begin{flushright}
 \emph{Lo\"{i}c Dutrieux}
