@@ -1,5 +1,5 @@
 #!/bin/bash
 
-xelatex -output-directory=/home/loic/Dropbox/cv/ cv.tex
-mv ~/Dropbox/cv/cv.pdf ~/Dropbox/cv/loic_dutrieux_cv_en.pdf
+xelatex cv.tex
+mv cv.pdf ~/Dropbox/cv/loic_dutrieux_cv_en.pdf
 
