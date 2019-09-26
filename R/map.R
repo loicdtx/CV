@@ -4,17 +4,19 @@ library(sp)
 library(rgeos)
 library(magrittr)
 
-world <- getData(name = 'countries')
+# world <- getData(name = 'countries')
+world <- readRDS('~/countries_gadm36_sp.rds')
 str(world@data)
 levels(world@data$UNREG1)
 # worldSub <- world[world$UNREG1 %in% c("Western Europe"),]
-worldSub <- world[world$ENGLISH %in% c('France', 'Belgium', 'Netherlands', 'Luxembourg'),]
+worldSub <- world[world$NAME_ENGLISH %in% c('France', 'Belgium', 'Netherlands', 'Luxembourg'),]
 plot(worldSub)
 
 
 FRA <- getData(name = 'GADM', country = 'FRA', level = 2)
-FRA <- FRA[FRA$NAME_2 %in% c('Ardèche', 'Alpes-de-Haute-Provence', 'Maine-et-Loire'),]
+FRA <- FRA[FRA$NAME_2 %in% c('Ardèche', 'Alpes-de-Haute-Provence', 'Maine-et-Loire', 'Hérault'),]
 FRA <- gCentroid(FRA, byid = TRUE)
+
 
 NL <- getData(name = 'GADM', country = 'NLD', level = 1)
 NL <- NL[NL$NAME_1 %in% c('Gelderland'),]
@@ -25,7 +27,7 @@ places <- rbind(NL, FRA) %>%
   data.frame()
 
 ggEurope <- spTransform(worldSub, CRS('+proj=robin')) %>%
-  fortify(region = 'NAME')
+  fortify(region = 'NAME_ISO')
 
 ggplot(ggEurope) +
   geom_polygon(aes(x=long, y=lat, group=group)) +
