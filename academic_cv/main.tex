@@ -1,0 +1,226 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\usepackage{standalone}
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.85]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%\usepackage[utf8]{inputenc}
+
+%\usepackage{booktabs}
+\usepackage{fontawesome}
+\usepackage{marvosym} % For cool symbols.
+%\usepackage{hyperref}
+
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Loïc} % Your first name
+\familyname{Dutrieux} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Forests and Bioeconomy Unit (D1)}{JRC Ispra}
+% \mobile{(+33) 0000000, (+91) 0000000}
+
+
+%\fax{(000) 111 1113}
+ 
+% \social{github}{loicdtx}
+\email{loic.dutrieux@ec.europa.eu} 
+
+
+
+% \homepage{www.xyz.com/}{My Webpage}
+
+% social link \faGithub, \faSkype, \faLinkedin,\faStackExchange, and \faStackOverflow
+\extrainfo{
+    \faGithub\href{https://github.com/loicdtx}{ Github} \quad
+    \faLinkedin\href{https://www.linkedin.com/in/loicdutrieux}{ Linkedin} \quad
+    % \faSkype\href{https://skype.com/abc}{Skype}
+    }
+
+
+
+%\social[linkedin][www.linkedin.com]{name}
+% The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
+
+\photo[70pt][0.3pt]{profile_pic.jpg} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
+%\quote{Not Attention, Patience is all we need.}
+
+%----------------------------------------------------------------------------------------
+
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvitem[.75em]{}{%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#2\end{minipage}%
+    }%
+}
+
+
+
+\usepackage{multibbl}
+\newcommand\Colorhref[3][orange]{\href{#2}{\small\color{#1}#3}}
+
+
+% \newcommand{\cvreference}[7]{%
+%     \textbf{#1}\newline% Name
+%     \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+%     \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+%     \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+%     \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+%     \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
+%     \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%%%%%%%%%%%%%%%%%%%
+% cventry structure
+%%%%%%%%%%%%%%%%%%%
+% usage: \cventry[spacing]{years}{degree/job title}{institution/employer}{localization}{optionnal: grade/...}{optional: comment/job description}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+
+\cventry{2020--now :}{Scientific project officer}{Joint Research Center (JRC) of the European Commission}
+{Ispra, Italy}{}{Research, data management, algorithm development for EU forests monitoring}
+
+
+\cventry{2019--2020 :}{Postdoctoral researcher}{CIRAD}
+{Montpellier, France}
+{}{Research on tropical tree species identification from UAV imagery using deep learning}
+
+
+
+\cventry{2017--2018 :}{Remote sensing specialist}{CONABIO}{Mexico}{}
+{Development of operational big geodata systems for land cover mapping, land cover change detection, and ocean monitoring. Leader of the land cover mapping system development team}
+
+\cventry{2012--2016 :}{PhD researcher}{Wageningen University}{The Netherlands}{}
+{Research on forest dynamics and biodiversity mapping from satellite images time-series, development of open source toolboxes for spatial analysis, course design \& teaching, linux systems administration, active participation in large collaborative EU funded research project}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+
+\cventry{2012--2016 :}{PhD, Forest Ecology \& GIS}{Wageningen University}{The Netherlands}{}
+{Remote sensing, tropical forest ecology, time-series analysis, algorithm development, data fusion \\
+Thesis title: \emph{Multidimensional remote sensing based mapping of tropical forests and their dynamics}\\}  % Arguments not required can be left empty
+
+\cventry{2010--2012 :}{MSc, International Land and Water Management}{Wageningen University}{The Netherlands}{}
+{Main subjects: Irrigation, hydrology, water management, social aspects of land and water management \\
+    Major thesis on \emph{Mapping water productivity of rice using remote sensing}\\
+    Minor thesis on \emph{Vegetation dynamics in the Arctic from Moderate resolution remote sensing time-series}\\}
+
+\cventry{2007--2011 :}{Master degree in Environment and Agriculture Engineering}{Ecole Supérieure d'Agriculture d'Angers (ESA)}{France}{}
+{Main subjects: Agronomy, landscape ecology, spatial analysis, Geopolitics, Management and Marketing\\}{}
+
+\cventry{2005--2007 :}{DUT (\textit{French professional Bachelor}) Biology and Environmental Engineering}{IUT de Digne-Les-Bains}{France}{}
+{Main subjects: Hydro-biology, Waste Water Management, Thermodynamic}{}
+
+
+%----------------------------------------------------------------------------------------
+%	Fellowships \& Awards
+%----------------------------------------------------------------------------------------
+
+\section{Honors \& Awards}
+
+\cventry{2015 :}{Oustanding Student Paper Award of the American Geophysical Union (AGU)}{San Francisco, USA}{}{Talk given at the AGU fall meeting}{}
+
+
+
+%----------------------------------------------------------------------------------------
+%	Supervised Students
+%----------------------------------------------------------------------------------------
+
+\section{Academic Mentoring}
+
+
+\cventry{2015}{Latifah Siti, MSc thesis}{Wageningen University}{The Netherlands}{}{Remote sensing time-series analysis to quantify land use intensity in shifting cultivation agricultural systems}
+
+\cventry{2015}{Benjamin Brede, MSc thesis}{Wageningen University}{The Netherlands}{}{Assessing drought imapacts on the Amazon rainforest from moderate resolution satellite image time-series}
+
+\cventry{2016}{Jorn Dallinga, MSc thesis}{Wageningen University}{The Netherlands}{}{Impact of landscape structure on tropical forest resilience}
+
+\cventry{2021}{Jonas Viehweger, JRC traineeship \& MSc thesis}{JRC/University of Marburg}{}{}{Comparative assessment of Near Real Time disturbance monitoring algorithms for European forests}
+
+\cventry{2023}{Nelly Gaillard}{JRC traineeship}{JRC}{Ispra, Italy}{Active learning for agile forest disturbance mapping}
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+\section{Publications}
+% \subsection{Journal Article(Accepted)}
+% \cventry{2019}{\textbf{Pratik Dutta}, Sriparna Saha, Sanket Pai and Aviral Kumar}{}{Protein-protein Interaction based Generative Model for Improving Gene Clustering}{In \textit{\textbf{Scientific Reports-Nature}} (\textbf{Impact Factor: 4.12)}}{}
+
+\subsection{Journal Articles}
+\newbibliography{journal}
+\bibliographystyle{journal}{plainyrrev}
+\nocite{journal}{*}
+\bibliography{journal}{journal}
+{\large \textsc{Refereed Journal Articles}}
+
+\subsection{Software}
+\newbibliography{software}
+\bibliographystyle{software}{plainyrrev}
+\nocite{software}{*}
+\bibliography{software}{software}
+{\large \textsc{Software}}
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
